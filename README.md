@@ -71,7 +71,7 @@ DOI
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/akbari-moghanjoughi/doi2bib.git
+git clone https://github.com/ayyoubakbari/doi2bib.git
 cd doi2bib
 
 # 2. Install dependencies
