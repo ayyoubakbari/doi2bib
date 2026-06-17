@@ -245,7 +245,31 @@ If doi2bib saves you time in your research, please cite it:
   license      = {CC BY 4.0}
 }
 ```
+---
+## Related tools
 
+**[prisma-screener](https://github.com/ayyoubakbari/prisma-screener)** — AI-powered
+abstract screener for systematic reviews. Feed it the `.bib` file produced by
+doi2bib and it classifies each paper as INCLUDE / EXCLUDE / MAYBE against your
+PICO criteria. Together the two tools cover the first two stages of a complete
+systematic review pipeline.
+
+---
+
+### Complete systematic review pipeline
+
+```
+DOI list (.xlsx / .csv)
+        │
+        ▼  doi2bib
+references.bib  ← full metadata + abstracts
+        │
+        ▼  prisma-screener
+screened_results.csv  ← INCLUDE / EXCLUDE / MAYBE
+        │
+        ▼
+Manual full-text review → PRISMA flow diagram
+```
 ---
 
 ## Contributing
